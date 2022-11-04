@@ -1,11 +1,14 @@
-let clue = [];
-let confidential = [];
-let players = []
+var clue = {};
+var confidential = [];
+var players = []
+var killer;
+
+// pode utilizar tanto clue.characters = [] quanto clue["characters"] = [] para criar um array dentro do objeto clue;
 
 clue.characters = [];
 clue.characters.push('Gongfu', 'Diogenes', 'Batman', 'Xandao', 'Robyssao', 'Geodon', 'Grande', 'Babidi', 'Cassia');
 
-clue.weapons = [];
+clue["weapons"] = [];
 clue.weapons.push('Katana', 'Taco de sinuca', 'Marreta', 'Panela', 'Soqueira', 'Chifre de boi', 'Faca de cozinha', 'Chave de Fenda', 'Estilingue');
 
 clue.rooms = [];
@@ -14,17 +17,22 @@ clue.rooms.push('Varanda', 'Sala de Estar', 'Quarto', 'Suíte', 'Adega', 'Banhei
 function randomizer(key) {
     const random = Math.floor(Math.random() * key.length);
     key[random];
-    return key.splice(random, 1);
+    return String(key.splice(random, 1));
 }
 
 confidential.push(randomizer(clue.characters), randomizer(clue.weapons), randomizer(clue.rooms))
-console.log(clue)
+killer = confidential[0];
 
 for (let i=0;i<8;i++) {
     players[i] = [randomizer(clue.characters), randomizer(clue.weapons), randomizer(clue.rooms)]
 }
 
 console.log(players);
+console.log(`The killer is ${killer}`);
+
+console.log((clue.characters === clue["characters"]))
+
+// tem material aqui com potencial pra um projetinho de palhaçada
 
 // confidential.push(randomizer(characters), randomizer(weapons), randomizer(rooms));
 
