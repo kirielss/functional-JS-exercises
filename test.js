@@ -13,11 +13,11 @@ console.log(x,y,z)
 console.log([y,z,x])
 console.log({z,x,y})
 
-var [a, b] = ['soltinho ', ['esse ta dentro ', [[['mais fundo ainda ', 'la ele... '], 'ufa aqui relaxou '], 'agora ta em casa' ]]];
+var [a, [b, [c, d]]] = ['soltinho ', ['esse ta dentro ', [[['mais fundo ainda ', 'la ele... '], 'ufa aqui relaxou '], 'agora ta em casa' ]]];
 
 console.log({a,b,c,d})
 console.log(c)
 
-var {babidi: aluno} = {aluno: 'feio'};
+var {babidi: aluno} = {babidi: 'feio'};
 console.log(aluno);
 console.log({aluno});

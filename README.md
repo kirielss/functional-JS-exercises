@@ -2,7 +2,6 @@
 
 ## PS: Esse readme é um grande rascunho de estudos
 
-
 - board game exercise
 - have pieces in a board
 - pieces for the characters
@@ -23,6 +22,10 @@
 a data é characters, weapons e rooms
 
 ## Anotações sobre as aulas:
+### Main Topics:
+#### Objects and Arrays
+#### List Transformations
+#### Array Methods
 
 - "functional programming é sobre os verbos"
 - "object oriented programming é sobre os substantivos"
