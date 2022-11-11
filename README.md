@@ -1,25 +1,23 @@
-## clue-game
+# Intermediary Javascript Course
+
+## O que aprendi?
+- O que são objetos em Javascript e como interagem entre si
+- O que são arrays e como interagir com eles
+- O que são métodos e propriedades de um objeto, sua chave e seu value
+- Escopo: Block Scope x Global Scope. Let x Var
+- Estrutura de dados
+- As diferentes formas de loopar array x object, for() e for...in
+- Os principais métodos do array. forEach, map, filter e reduce
+- Nesting: List Transforms e como navegar por objetos com várias camadas
+- Desestruturação: Como coletar elementos Deep Nested em uma estrutura de dados
+- Projecting: Como transformar um value de uma estrutura de dados em outra estrutura de dados
+- Funções em Javascript: Definição, Nome, Invocação, Argumentos, Parâmetros, Body, Return e Side Effects
+- High-Order Functions e Callbacks. Funções que retornam funções
+- Functional Utilities: curry e composing
+- Advanced Scope: O que são Closures e como utilizar
+
 
 ## PS: Esse readme é um grande rascunho de estudos
-
-- board game exercise
-- have pieces in a board
-- pieces for the characters
-- diferent cards
-- diferent weapons
-- diferent rooms
-  
-- there is a card called confidential with 3 things:
-- the murderer
-- the room
-- the weapon
-
-- o objetivo do jogo é descobrir quais cartas estão no confidential.
-- tem que descobrir quem tem as outras cartas
-- descobrir quais cartas estão faltando
-- assim adivinhar quais cartas estão no envelope Confidential
-
-a data é characters, weapons e rooms
 
 ## Anotações sobre as aulas:
 ### Main Topics:
@@ -110,3 +108,5 @@ Objeto katana teria tamanho X, cor Y, marca Z, etc...
 - não dá pra dar .push em object. Só pode dar push em array
   
 ![](img/dotsXbrackets.jpg)
+
+## Um Compilado organizado desse curso e com exemplos de código se encontra no meu servidor do discord.
