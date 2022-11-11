@@ -1,3 +1,4 @@
+// rascunho
 
 const newDevelopment = [
     {
@@ -38,14 +39,34 @@ const newDevelopment = [
     },
 ]
 
-var suspPlaces = [[],[],[]];
+// solução da professora (não roda aqui)
+// honestamente... eu to de boa com a minha. Ela tá indo fundo demais procurando library no underscore que resolva
+// achou o intersection ali mas rapaz n ta resolvendo não... Acho que ela jogou pra cima
+
+const notInRoom = suspect => {
+
+    const emptyRooms = _.reduce(suspect.rooms, (room,memo) => {
+        if (room === false) memo.push(room)
+        return memo
+    }, [])
+    
+    return emptyRooms;
+}
+
+var notInRooms = _.map(newDevelopment, notInRoom)
+console.log(notInRooms)
+
+_.intersection(...notInRooms)
+
+
+//newDevelopment.reduce(notInRoom, [])
+
+/* var suspPlaces = [[],[],[]];
 
 newDevelopment.forEach((person,i) => {
     suspPlaces[i] = person.rooms
 })
-
-console.log(suspPlaces)
-
+ */
 
 /* var findRoom = function(suspectsList, solution) {
 
